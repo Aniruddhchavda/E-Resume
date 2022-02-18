@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiNodejs, DiGoogleAnalytics, DiTerminal , DiStackoverflow } from 'react-icons/di';
+import { DiFirebase, DiReact, DiNodejs, DiGoogleAnalytics, DiTerminal , DiGitCompare } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -8,7 +8,7 @@ const Technologies = () =>  (
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the IT world such as testing , development , data analysis etc.
+      I've worked with a range of tools and technologies in the IT world such as Blockchain D-App Development, Automation Testing , Front-End Design and Development , Data Analytics etc.
     </SectionText>
     <List>
       <ListItem>
@@ -31,7 +31,7 @@ const Technologies = () =>  (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            NodeJS and .NET CORE
+            NodeJS(REST API) and .NET CORE
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -73,13 +73,13 @@ const Technologies = () =>  (
       </ListItem>
       <ListItem>
         <picture>
-          <DiStackoverflow size="3rem" />
+          <DiGitCompare size="3rem" />
         </picture>
         <ListContainer>
-          <ListTitle>Stack-Overflow</ListTitle>
+          <ListTitle>Block-Chain</ListTitle>
           <ListParagraph>
-            Not a technology. <br />
-            But it deserves a space here &#128540;
+            Experience with <br />
+            Ethereum and Solana
           </ListParagraph>
         </ListContainer>
       </ListItem>

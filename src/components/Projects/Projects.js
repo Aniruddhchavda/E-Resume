@@ -20,17 +20,24 @@ const Projects = () => (
             <CardInfo className="card-info">{p.description}</CardInfo>
             <br/>
             <div>
-              <TitleContent style={{ border: "0.5px solid white", borderRadius: "10px"}}>Stack</TitleContent>
+              <TitleContent style={{ border: "0.5px solid white", borderRadius: "10px"}}>Tools/Technologies</TitleContent>
               <TagList>
                 {p.tags.map((t, i) => {
                   return <Tag key={i}>{t}</Tag>;
                 })}
               </TagList>
             </div>
+            {(p.id!=3) &&
             <UtilityList>
               <ExternalLinks href={p.visit}>Code</ExternalLinks>
               <ExternalLinks href={p.source}>Demo</ExternalLinks>
             </UtilityList>
+            }
+            {(p.id==3) &&
+            <UtilityList>
+              <ExternalLinks>Code and Demo Hidden</ExternalLinks>
+            </UtilityList>
+            }
           </BlogCard>
         );
       })}

@@ -1,11 +1,23 @@
 import Link from 'next/link';
 import React from 'react';
+import Button from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { DiRedhat } from 'react-icons/di';
+import { DiRedhat,DiStackoverflow } from 'react-icons/di';
 
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons , Span} from './HeaderStyles';
+import { Container, Div1, Div2, Div3, NavLink, SocialIcons , Span , Hamburg , Div4 , LI , Btn} from './HeaderStyles';
 
-const Header = () =>  (
+
+
+export default class Header extends React.Component
+{
+  state = { isActive : false };
+
+  toggle = () => this.setState({ isActive: !this.state.isActive});
+
+  render()
+  {
+    return(
+
   <Container>
     <Div1>
       <Link href="/">
@@ -14,6 +26,13 @@ const Header = () =>  (
         </a>
       </Link>
     </Div1>
+
+    
+    <Hamburg onClick={this.toggle}>
+    <DiStackoverflow size="4rem"/>
+    </Hamburg>
+    
+
     <Div2>
       <li>
         <Link href="#projects">
@@ -39,7 +58,36 @@ const Header = () =>  (
           <AiFillLinkedin size="3rem" />
         </SocialIcons>
       </Div3>
-    </Container>
-);
 
-export default Header;
+        <Div4 isActive={this.state.isActive}>
+        <LI>
+          <Link href="#projects">
+            <NavLink>Projects</NavLink>
+         </Link>
+       </LI>
+        <LI>
+          <Link href="#tech">
+            <NavLink>Technologies</NavLink>
+          </Link>
+        </LI>        
+        <LI>
+          <Link href="#about">
+            <NavLink>About</NavLink>
+          </Link>
+        </LI>  
+        <LI>
+          <SocialIcons href="https://github.com/Aniruddhchavda">
+            <AiFillGithub size="3rem" />
+          </SocialIcons>
+        </LI>
+        <LI>
+        <SocialIcons href="https://www.linkedin.com/in/ani-chavda/">
+          <AiFillLinkedin size="3rem" />
+        </SocialIcons>
+        </LI>
+        </Div4>
+    </Container>
+    );
+  }
+};
+

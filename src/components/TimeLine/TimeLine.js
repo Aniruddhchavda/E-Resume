@@ -45,8 +45,9 @@ const Timeline = () => {
   return (
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
+      
       <SectionText>
-      Seasoned , forward-looking software enginner having 3+ years of professional experience in web-based and mobile-based technologies.
+      Seasoned , forward-looking software enginner having 3+ years of professional experience in web-based technologies.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>

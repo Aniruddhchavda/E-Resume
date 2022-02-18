@@ -37,6 +37,7 @@ export const SectionTitle = styled.h2`
   padding: ${(props) => props.main ? '58px 0 16px' : '0'};
 
   @media ${props => props.theme.breakpoints.md}{
+    
     font-size: ${(props) => props.main ? '56px' : '48px'};
     line-height: ${(props) => props.main ? '56px' : '48px'};
     margin-bottom: 12px;
@@ -51,6 +52,7 @@ export const SectionTitle = styled.h2`
     margin-bottom: 8px;
     padding: ${(props) => props.main ? '16px 0 8px' : '0'};
     max-width: 100%;
+    text-align:center;
   }
 `
 
@@ -96,6 +98,7 @@ export const SectionDivider = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 32px;
     height: 2px;
+    text-align:center;
   }
 `
 export const SectionSubText = styled.p`
