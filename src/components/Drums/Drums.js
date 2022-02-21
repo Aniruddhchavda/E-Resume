@@ -5,7 +5,6 @@ import { Drum } from './DrumsStyles';
 import Link from 'next/link';
 import {AiFillSmile } from 'react-icons/ai';
 
-
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons , Span} from '../Header/HeaderStyles';
 
 
@@ -16,7 +15,7 @@ const Drums = (props) => (
     <AiFillSmile size="4rem" color="Yellow"></AiFillSmile></SectionText>
 
 <Drum 
-src="https://aniruddhchavda.github.io/Aniruddh.DrumProject.io/"
+src='https://aniruddhchavda.github.io/Aniruddh.DrumProject.io/'
 scroll="no"
 scrolling="no"
 >
