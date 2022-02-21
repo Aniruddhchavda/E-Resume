@@ -4,7 +4,7 @@ import Button from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { DiRedhat,DiStackoverflow } from 'react-icons/di';
 
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons , Span , Hamburg , Div4 , LI , Btn} from './HeaderStyles';
+import { Container, Div1, Div2, Div3, NavLink, SocialIcons , Span , Hamburg , Div4 , LI , CV} from './HeaderStyles';
 
 
 
@@ -48,7 +48,7 @@ export default class Header extends React.Component
         <Link href="#about">
           <NavLink>About</NavLink>
         </Link>
-      </li>        
+      </li>    
     </Div2>
       <Div3>
         <SocialIcons href="https://github.com/Aniruddhchavda">
@@ -56,6 +56,9 @@ export default class Header extends React.Component
         </SocialIcons>
         <SocialIcons href="https://www.linkedin.com/in/ani-chavda/">
           <AiFillLinkedin size="3rem" />
+        </SocialIcons>
+        <SocialIcons href="https://github.com/Aniruddhchavda/CV/blob/f2149c29e0d59a198eea19df5aa9f3f4b1970b24/ani_cv.pdf">
+          <CV>CV</CV>
         </SocialIcons>
       </Div3>
 
@@ -83,6 +86,11 @@ export default class Header extends React.Component
         <LI>
         <SocialIcons href="https://www.linkedin.com/in/ani-chavda/">
           <AiFillLinkedin size="3rem" />
+        </SocialIcons>
+        </LI>
+        <LI>
+        <SocialIcons href="https://github.com/Aniruddhchavda/CV/blob/f2149c29e0d59a198eea19df5aa9f3f4b1970b24/ani_cv.pdf">
+          <CV>CV</CV>
         </SocialIcons>
         </LI>
         </Div4>

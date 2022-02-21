@@ -152,3 +152,17 @@ export const CarouselButtonDot = styled.div`
   width: 3px;
   height: 3px;
 `
+export const Ho = styled.h1`
+text-align:center;
+margin-top : 1em;
+margin-bottom : 1em;
+font-size : 4em;
+
+@media ${props => props.theme.breakpoints.lg} {
+  font-size : 2em;
+  margin-top : 1em;
+}
+@media ${props => props.theme.breakpoints.md} {
+  font-size : 2em;
+}
+`;

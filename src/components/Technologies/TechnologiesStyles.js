@@ -23,6 +23,20 @@ export const ImageContainer = styled.div`
   }
 `
 
+export const Ho = styled.h1`
+text-align:center;
+margin-top : 1em;
+margin-bottom : 1em;
+font-size : 4em;
+
+@media ${props => props.theme.breakpoints.lg} {
+  font-size : 2em;
+}
+@media ${props => props.theme.breakpoints.md} {
+  font-size : 2em;
+}
+
+`
 export const MainImage = styled.img`
   width: 100%;
 `
@@ -53,7 +67,6 @@ export const List = styled.ul`
 export const ListContainer = styled.div`
   display: flex;
   flex-direction: column;
-
   @media ${props => props.theme.breakpoints.sm}{
     display: flex;
     margin-left: 18px;
@@ -101,7 +114,6 @@ export const ListItem = styled.li`
   max-width: 320px;
   display: flex;
   flex-direction: column;
-
 @media ${props => props.theme.breakpoints.md}{
   max-width: 203px;
 }

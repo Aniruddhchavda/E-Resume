@@ -19,6 +19,7 @@ row-gap: 3rem;
   flex-direction: column;
   padding: 2rem;
   padding-bottom: 0;
+  
 }
 
 `
@@ -108,3 +109,16 @@ export const Tag = styled.li`
 color: #d8bfbf;
 font-size: 1.5rem;
 `
+export const Ho = styled.h1`
+text-align:center;
+margin-top : 1em;
+margin-bottom : 1em;
+font-size : 4em;
+
+@media ${props => props.theme.breakpoints.lg} {
+  font-size : 2em;
+}
+@media ${props => props.theme.breakpoints.md} {
+  font-size : 2em;
+}
+`;

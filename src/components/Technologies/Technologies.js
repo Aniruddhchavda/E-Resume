@@ -1,12 +1,12 @@
 import React from 'react';
 import { DiFirebase, DiReact, DiNodejs, DiGoogleAnalytics, DiTerminal , DiGitCompare } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import { Ho, List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
 const Technologies = () =>  (
   <Section id="tech">
     <SectionDivider divider />
-    <SectionTitle>Technologies</SectionTitle>
+    <Ho>Technologies</Ho>
     <SectionText>
       I've worked with a range of tools and technologies in the IT world such as Blockchain D-App Development, Automation Testing , Front-End Design and Development , Data Analytics etc.
     </SectionText>

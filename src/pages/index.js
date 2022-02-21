@@ -6,6 +6,7 @@ import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
+import Drums from '../components/Drums/Drums'
 
 const Home = () => {
   return (
@@ -13,7 +14,9 @@ const Home = () => {
       <Section grid>
         <Hero />
         <BgAnimation />
+        
       </Section>
+      <Drums />
       <Projects />
       <Technologies />
       <Timeline />

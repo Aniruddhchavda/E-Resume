@@ -168,3 +168,24 @@ border-radius: 50px;
     cursor: pointer;
   }
 `
+
+//Cv
+export const CV = styled.p`
+margin : 0;
+font-weight : Bold;
+font-size : 1.5em;
+color : orange;
+
+&:hover{
+  color : white;
+}
+
+@media ${(props) => props.theme.breakpoints.sm} {
+  background : blue;
+  color : white;
+  text-align : center;
+  &:hover {
+    background-color: blue;
+  }
+}
+`;

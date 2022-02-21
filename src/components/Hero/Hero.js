@@ -1,7 +1,7 @@
 import React from 'react';
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { Section } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import { SectionText , LeftSection , SectionTitle } from './HeroStyles';
 import Link from 'next/link';
 
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons , Span} from '../Header/HeaderStyles';
@@ -11,7 +11,7 @@ const Hero = (props) => (
   <>
     <Section row nopadding>
       <LeftSection>
-        <SectionTitle main center>
+        <SectionTitle main >
           Welcome To 
           My Portfolio Website
         </SectionTitle>
