@@ -14,7 +14,9 @@ const Drums = (props) => (
     <SectionText main>Have a look at the first web-app I created 
     back in High-School. &nbsp;
     <AiFillSmile size="4rem" color="Yellow"></AiFillSmile></SectionText>
-<Drum src="https://aniruddhchavda.github.io/Aniruddh.DrumProject.io/">
+<Drum 
+src="https://aniruddhchavda.github.io/Aniruddh.DrumProject.io/"
+>
 </Drum>
   </Section>
 );
