@@ -8,7 +8,7 @@ const Technologies = () =>  (
     <SectionDivider divider />
     <Ho>Technologies</Ho>
     <SectionText>
-      I've worked with a range of tools and technologies in the IT world such as Blockchain D-App Development, Automation Testing , Front-End Design and Development , Data Analytics etc.
+      I've worked with a range of tools and technologies in the IT world such as Blockchain D-App Development, Automation Software Testing , Full Stack Development , Data Analytics etc.
     </SectionText>
     <List>
       <ListItem>
@@ -19,7 +19,7 @@ const Technologies = () =>  (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
           Experience with <br />
-            React Javascript
+            React and Angular
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -31,7 +31,7 @@ const Technologies = () =>  (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            NodeJS(REST API) and .NET CORE
+            NodeJS and .NET CORE
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -43,7 +43,7 @@ const Technologies = () =>  (
           <ListTitle>Database</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Oracle , Microsoft-SQL , Firebase etc
+            Oracle , Microsoft-SQL , Firebase
           </ListParagraph>
         </ListContainer>
       </ListItem>

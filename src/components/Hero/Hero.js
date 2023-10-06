@@ -13,7 +13,7 @@ const Hero = (props) => (
       <LeftSection>
         <SectionTitle main >
           Welcome To 
-          My Portfolio Website
+          My E-resume
         </SectionTitle>
         
         <SectionText>
@@ -21,7 +21,7 @@ const Hero = (props) => (
         </SectionText>
         <Button>
         <Link href="https://www.linkedin.com/in/ani-chavda/">
-        Contact Me
+        Lets connect ?
         </Link>
         </Button>
       </LeftSection>

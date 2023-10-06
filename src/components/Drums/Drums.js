@@ -11,7 +11,7 @@ import { Container, Div1, Div2, Div3, NavLink, SocialIcons , Span} from '../Head
 const Drums = (props) => (
   <Section nopadding id="drums">
   <Ho>MY FIRST PROJECT</Ho>
-  <SectionText main>Now onto the fun stuff !! Have a look at the first web-app I created back in High-School. &nbsp;
+  <SectionText main>Now onto the fun stuff !! Have a look at the first web-app I created back in High-School.(Make sure to turn the volume on ) &nbsp;
     <AiFillSmile size="4rem" color="Yellow"></AiFillSmile></SectionText>
 <Drum 
 src='https://aniruddhchavda.github.io/Aniruddh.DrumProject.io/'

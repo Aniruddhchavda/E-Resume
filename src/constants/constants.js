@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: 'Blockchain-based Donation App',
+    description:"Ethereum based donation DApp that lets you create a record under certain funding categories. It has metamask wallet integration which can be used to make donations. The smart contract allows transparent collections info and refund feature.",
+    image: '/images/5.png',
+    tags: ['Web3' , 'React', 'MetaMask' , 'Blockchain'],
+    source: 'https://github.com/Aniruddhchavda/CrowdFunding-DApp',
+    visit: 'https://github.com/Aniruddhchavda/CrowdFunding-DApp',
+    id: 1,
+  },
+  {
     title: 'Solana Token',
     description: 'Created my own token named "Lazy Shiba" based on Solana Block-chain, Successfully added a logo and merged it with github repo of Solana and it could now be verified on SolScan by adding the contract address.',
       image: '/images/3.png',
@@ -36,15 +45,6 @@ export const projects = [
     id: 2,
   },
   {
-    title: 'Blockchain-based Donation App (In Progress)',
-    description:"The application is currently in progress, it will be used to create a funding record with the ability to provide refund , all of the transactions will be self-verifiable to provide complete transparency , the application will be based on ethereum.",
-    image: '/images/5.png',
-    tags: ['Web3' , 'React', 'MetaMask' , 'Blockchain'],
-    source: 'hidden',
-    visit: 'hidden',
-    id: 3,
-  },
-  {
     title: 'Web App to Run HP ALM Tests without using Windows XP',
     description:"Windows XP was required to run automated test cases in HP ALM which was outdated and slow so I created a web app which can run the tests using the HP ALM's API. It significantly brought down the time required to initiate a run",
     image: '/images/6.png',
@@ -55,7 +55,7 @@ export const projects = [
   },
   {
     title: 'Analytics Dashboard',
-    description:"PowerBI based dashboard which can provide an in-detail view of the faculty workload.",
+    description:"PowerBI based dashboard which can provide an in-detail view of the faculty workload based on department , area , gender , ethnicity ,race , citizenship etc",
     image: '/images/7.png',
     tags: ['POWERBI' , 'SQL Server'],
     source: 'hidden',
@@ -64,7 +64,7 @@ export const projects = [
   },
   {
     title: 'E-Resume',
-    description:"The website that you're currently viewing , I created my portfolio website by exploring/experimenting with the react design libraries.",
+    description:"The website that you're currently viewing , I created my portfolio website by exploring/experimenting with the react design libraries. I update it twice a year to make sure everything is up-to-date",
     image: '/images/8.png',
     tags: ['React'],
     source: 'https://www.anichavda.com',
@@ -88,6 +88,6 @@ export const TimeLineData2 = [
 
 export const TimeLineData = [
   { year: 'May 2019 - Jan 2021' , text: 'Automation QA Analyst - Oracle', desc1: 'Created test cases based on requirements' , desc2: 'Created automated scripts using selenium' , desc3: 'Reported bugs and created reports' },
-  { year: 'Jan 2021 - May 2022' , text: 'Research Assistant - TTU', desc1: 'Wrote procedures to get and combine data from different sources' , desc2: 'Created a webapp to display the reports' , desc3: 'Use PowerBI to analyze' },
-  { year: 'May 2022 - Present ' , text: 'Programmer Analyst 3 - TTUS', desc1: 'Full stack development of applications related to student' , desc2: 'Integrated different third party apps' , desc3: 'Created jobs to ease daily manual work' },
+  { year: 'Jan 2021 - May 2022' , text: 'Research Assistant - TTU', desc1: 'Wrote procedures to get and combine data from different sources' , desc2: 'Use PowerBI to analyze' , desc3: 'Created a webapp to display the reports'  },
+  { year: 'May 2022 - Present ' , text: 'Programmer Analyst 3 - TTUS', desc1: 'Full stack development of applications related to student area' , desc2: 'Integrated different third party apps' , desc3: 'Created jobs to ease daily manual work' },
 ];
