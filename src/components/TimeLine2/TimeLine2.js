@@ -1,12 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-import { Ho, CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode, CarouselItemText2 } from './TimeLineStyles';
+import { Ho, CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode, CarouselItemText2 } from './TimeLineStyles2';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { TimeLineData } from '../../constants/constants';
+import { TimeLineData2 } from '../../constants/constants';
 
-const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
+const TOTAL_CAROUSEL_COUNT = TimeLineData2.length;
 
-const Timeline = () => {
+const Timeline2 = () => {
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
 
@@ -18,7 +18,7 @@ const Timeline = () => {
     e.preventDefault();
 
     if (carouselRef.current) {
-      const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length));
+      const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData2.length));
       
       scroll(carouselRef.current, scrollLeft);
     }
@@ -26,7 +26,7 @@ const Timeline = () => {
 
   const handleScroll = () => {
     if (carouselRef.current) {
-      const index = Math.round((carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * TimeLineData.length);
+      const index = Math.round((carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * TimeLineData2.length);
 
       setActiveItem(index);
     }
@@ -43,15 +43,12 @@ const Timeline = () => {
   }, []);
 
   return (
-    <Section id="about">
-      <Ho>Experience</Ho>
-
-      <SectionText>
-      Seasoned , forward-looking Full Stack Developer having 3+ years of professional experience.
-      </SectionText>
+    <Section id="education">
+      <Ho>Education</Ho>
+      
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
-          {TimeLineData.map((item, index) => (
+          {TimeLineData2.map((item, index) => (
             <CarouselMobileScrollNode
               key={index}
               final={index === TOTAL_CAROUSEL_COUNT - 1}>
@@ -63,7 +60,7 @@ const Timeline = () => {
 
                 <CarouselItemImg
                     width="300"
-                    height="6"
+                    height="10"
                     viewBox="0 0 300 6"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -97,20 +94,13 @@ const Timeline = () => {
                 {`${item.year}`}
                 </CarouselItemTitle>
                 <CarouselItemText>{item.text}</CarouselItemText>
-                <CarouselItemText2>
-                  <ul>
-                    <li>* {item.desc1}</li>
-                    <li>* {item.desc2}</li>
-                    <li>* {item.desc3}</li>
-                  </ul>
-                  </CarouselItemText2>
               </CarouselItem>
             </CarouselMobileScrollNode>
           ))}
         </>
       </CarouselContainer>
       <CarouselButtons>
-        {TimeLineData.map((item, index) => {
+        {TimeLineData2.map((item, index) => {
           return (
             <CarouselButton
               key={index}
@@ -123,8 +113,9 @@ const Timeline = () => {
           );
         })}
       </CarouselButtons>
+      <SectionDivider />
     </Section>
   );
 };
 
-export default Timeline;
+export default Timeline2;

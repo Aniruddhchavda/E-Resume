@@ -46,7 +46,7 @@ export default class Header extends React.Component
       </li>        
       <li>
         <Link href="#about">
-          <NavLink>About</NavLink>
+          <NavLink>Experience</NavLink>
         </Link>
       </li>    
     </Div2>
@@ -75,7 +75,7 @@ export default class Header extends React.Component
         </LI>        
         <LI>
           <Link href="#about">
-            <NavLink>About</NavLink>
+            <NavLink>Experience</NavLink>
           </Link>
         </LI>  
         <LI>

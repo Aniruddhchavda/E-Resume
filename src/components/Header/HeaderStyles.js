@@ -9,6 +9,8 @@ export const Container = styled.div`
   padding: 1rem;
   padding-top: 2rem;
   background-image: linear-gradient(to right, hsl(232.7,27.3%,23.7%) , hsl(205.1,100%,36.1%));
+  position:-webkit-sticky; position:sticky; top:0;
+  z-index : 999;
   @media ${(props) => props.theme.breakpoints.md} {
     display : flex;
   }

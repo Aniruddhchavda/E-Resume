@@ -9,12 +9,15 @@ const Footer = () => {
     <FooterWrapper>
       <LinkList>
         <LinkColumn>
-          <LinkTitle>Email</LinkTitle>
+          <LinkTitle>Professional Email</LinkTitle>
           <LinkItem href="mailto:contact@anichavda.com">
-            Professional : contact@anichavda.com
+            contact@anichavda.com
           </LinkItem>
+        </LinkColumn>
+        <LinkColumn>
+          <LinkTitle>Personal Email</LinkTitle>
           <LinkItem href="mailto:anichavda98@gmail.com">
-            Personal : anichavda98@gmail.com
+            anichavda98@gmail.com
           </LinkItem>
         </LinkColumn>
       </LinkList>

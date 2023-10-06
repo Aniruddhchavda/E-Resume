@@ -79,9 +79,15 @@ export const ani = [
   }
 ];
 
+export const TimeLineData2 = [
+  { year: 'May 2014 - May 2016', text: 'Graduated high-school'},
+  { year: 'May 2016 - May 2019', text: 'Graduated Bachelors in CS (4.0 CGPA)'},
+  { year: 'Jan 2021 - May 2022', text: 'Graduated MS in CS from Texas Tech University (3.5 CGPA)'}
+];
+
+
 export const TimeLineData = [
-  { year: 2016, text: 'Graduated high-school & Started my CS journey', },
-  { year: 2019, text: 'Got my undergrad and started working with Oracle', },
-  { year: 2021, text: 'Left Oracle to start my Masters in Computer Science at texas tech', },
-  { year: 2022, text: 'Will Graduate with MS in CS', },
+  { year: 'May 2019 - Jan 2021' , text: 'Automation QA Analyst - Oracle', desc1: 'Created test cases based on requirements' , desc2: 'Created automated scripts using selenium' , desc3: 'Reported bugs and created reports' },
+  { year: 'Jan 2021 - May 2022' , text: 'Research Assistant - TTU', desc1: 'Wrote procedures to get and combine data from different sources' , desc2: 'Created a webapp to display the reports' , desc3: 'Use PowerBI to analyze' },
+  { year: 'May 2022 - Present ' , text: 'Programmer Analyst 3 - TTUS', desc1: 'Full stack development of applications related to student' , desc2: 'Integrated different third party apps' , desc3: 'Created jobs to ease daily manual work' },
 ];
